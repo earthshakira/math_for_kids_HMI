@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Maths for Kids</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="./css/theme.css" >
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+  </head>
+  <body class="main-bg">
+    <p class="text-primary" style="float:right">earthshakira</p>
+    <div class="container main-bg">
+		<div class="jumbotron well" style="margin:50px">
+			<h1 class="text-default text-center" > Maths for Kids</h1>
+			<div id="playground-add" class="playground" style="display:none">
+				This is add
+			</div>
+			<div id="playground-sub" class="playground" style="display:none">
+				this is sub
+			</div>
+			<div id="playground-mul" class="playground" style="display:none">
+				this is mul
+			</div>
+			<div id="playground-div" class="playground" style="display:none">
+				this is div
+			</div>
+			<div class="container">
+				<div class="col-xs-6">
+					<button id="add" class="btn btn-warning main-logo"><i class="glyphicon glyphicon-plus logo-glyph" onclick="lesson('add')"> </i>
+					<h3 class="text-default">Addition</h3>
+					</button>
+				</div>
+				<div class="col-xs-6">
+					<button class="btn btn-primary main-logo" onclick="lesson('sub')"><i class="glyphicon glyphicon-minus logo-glyph"> </i>
+					<h3 class="text-default">Subtraction</h3>
+					</button>
+				</div>
+				<div class="col-xs-6">
+					<button class="btn btn-success main-logo"><i class="glyphicon glyphicon-remove logo-glyph" > </i>
+					<h3 class="text-default">Multiplication</h3>
+					</button>
+				</div>
+				<div class="col-xs-6">
+					<button class="btn btn-danger main-logo"><i class="glyphicon glyphicon-resize-small logo-glyph" > </i>
+					<h3 class="text-default">Division</h3>
+					</button>
+				</div>
+			</div>
+		</div>
+    </div>
+    <script>
+    	$(document).ready(function(){
+			
+			$(".btn").click(function(){
+				$("#playground-"+this.id).slideDown();
+			});
+    	});
+    </script>
+  </body>
+</html>

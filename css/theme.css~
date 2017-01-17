@@ -43,6 +43,6 @@ z-index: 1000;
 	position:absolute;
 	z-index:10000;
 	height:90%;
-	width:79%;
+	width:80%;
 	background-color:white;
 }
