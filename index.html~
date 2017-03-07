@@ -5,59 +5,49 @@
     <title>Maths for Kids</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
     <link rel="stylesheet" type="text/css" href="./css/theme.css" >
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/md5.js"></script>
   </head>
   <body class="main-bg">
-    <p class="text-primary" style="float:right">earthshakira</p>
-    <div class="container main-bg">
-		<div class="jumbotron well" style="margin:50px">
-			<h1 class="text-default text-center" > Maths for Kids</h1>
-			<div id="playground-add" class="playground" style="display:none">
-				This is add
+	<div class="container">
+		<div id="modal-cars" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text text-center">Humra Gaddi</h4>
+            </div>
+            <div class="modal-body">
+		<div class="row">
+			<div class="col-xs-6">
+				<div id="car_image"></div>
 			</div>
-			<div id="playground-sub" class="playground" style="display:none">
-				this is sub
-			</div>
-			<div id="playground-mul" class="playground" style="display:none">
-				this is mul
-			</div>
-			<div id="playground-div" class="playground" style="display:none">
-				this is div
-			</div>
-			<div class="container">
-				<div class="col-xs-6">
-					<button id="add" class="btn btn-warning main-logo"><i class="glyphicon glyphicon-plus logo-glyph" onclick="lesson('add')"> </i>
-					<h3 class="text-default">Addition</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button class="btn btn-primary main-logo" onclick="lesson('sub')"><i class="glyphicon glyphicon-minus logo-glyph"> </i>
-					<h3 class="text-default">Subtraction</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button class="btn btn-success main-logo"><i class="glyphicon glyphicon-remove logo-glyph" > </i>
-					<h3 class="text-default">Multiplication</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button class="btn btn-danger main-logo"><i class="glyphicon glyphicon-resize-small logo-glyph" > </i>
-					<h3 class="text-default">Division</h3>
-					</button>
-				</div>
+			<div class="col-xs-6">
+				<div id="car_specs"></div>
 			</div>
 		</div>
-    </div>
-    <script>
-    	$(document).ready(function(){
-			
-			$(".btn").click(function(){
-				$("#playground-"+this.id).slideDown();
-			});
-    	});
-    </script>
+		<nav aria-label="Page navigation">
+		  <ul class="pagination" id="pag_nav">
+		  </ul>
+		</nav>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+		<div class="jumbotron text-center" style="margin-top:150px;">
+			<h1 class="text-center">Cars For You</h1>
+			<button id="cars" class="btn btn-success"><i class="glyphicon glyphicon-road logo-glyph" > </i>
+					<h3 class="text-default">Click here for cars</h3>
+			</button>
+		</div>
+	</div>
   </body>
 </html>

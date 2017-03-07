@@ -45,7 +45,7 @@ function createmodal(){
 	var htmlString="";
 	htmlString+=prev;
 	for(var i=0;i<data.length;i++){
-		htmlString+=make_nav_li((i+1),data[i].Name);	
+		htmlString+=make_nav_li((i+1),data[i].nam);	
 	}
 	htmlString+=next;
 	$("#pag_nav").html(htmlString);

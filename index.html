@@ -12,153 +12,42 @@
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body class="main-bg">
-    <p class="text-primary" style="float:right">earthshakira</p>
-    <div class="container main-bg">
-		<div class="jumbotron well" style="margin:50px;background-image:url('./img/bg.png')">
-			<h1 class="text-default text-center title" > Maths for Kids</h1>
-      <!-- Modal Multiplication-->
-      <div id="playground-mul" class="modal fade" role="dialog">
+	<div class="container">
+		<div id="modal-cars" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
 
           <!-- Modal content-->
-          <div class="modal-content" style="background-image:url('./img/bg.png')">
+          <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text text-center text-success">Multiplication</h4>
+              <h4 class="modal-title text text-center">Humra Gaddi</h4>
             </div>
             <div class="modal-body">
-              <p class="text text-primary text-info" >Multiplication means to repeatedly add the number.<br>Like for 4 x 5 : <br>
-                repeatedly add 5 , 4 times like 5 + 5 + 5 + 5 = 20<br>
-                Hence 4 x 5 = 20.
-                <br> Here Try for Your Self:
-              </p>
-              <div class="try-it text-center">
-                <input type="text" class="mega-input" id="mul-inp1"  maxlength="1" value="1"/>
-                <i class="glyphicon glyphicon-remove logo-glyph text-success" style="margin-top:40px"> </i>
-                <input type="text" class="mega-input" id="mul-inp2"  maxlength="1" value="1"/>
-                <div id="anim-mul" class="text text-big text-success">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Modal Division-->
-      <div id="playground-div" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal content-->
-          <div class="modal-content" style="background-image:url('./img/bg.png')">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text text-center text-danger">Division</h4>
-            </div>
-            <div class="modal-body">
-              <p class="text text-primary text-info" >Division gives us two answers the <span class="text-success">Quotient </span>and the <span class="text-success">Remainder </span>.<br>
-                <span class="text-success">Quotient </span>is the number of times you can subtract the second number can be subtracted from the first number.<br>
-                <span class="text-success">Remainder </span>is the number left after all the subtractions
-              </p>
-              <div class="try-it text-center">
-                <input type="text" class="mega-input" id="div-inp1"  maxlength="1" value="1"/>
-                <i class="glyphicon logo-glyph text-success" style="margin-top:40px"> /</i>
-                <input type="text" class="mega-input" id="div-inp2"  maxlength="1" value="1"/>
-                <div id="anim-div" class="text text-big">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Modal addition-->
-      <div id="playground-add" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal content-->
-          <div class="modal-content" style="background-image:url('./img/bg.png')">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text text-center">Addition</h4>
-            </div>
-            <div class="modal-body">
-              <p class="text text-primary text-info" >Addition gives the <span class="text-success">sum </span> of two numbers.<br>
-                <span class="text-success">Sum </span> is the number of objects you will have on mixing two groups of objects.<br>
-              </p>
-              <div class="try-it text-center">
-                <input type="text" class="mega-input" id="add-inp1"  maxlength="1" value="1"/>
-                <i class="glyphicon glyphicon-plus logo-glyph text-warning" style="margin-top:40px"></i>
-                <input type="text" class="mega-input" id="add-inp2"  maxlength="1" value="1"/>
-                <div id="anim-add" class="text text-big">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Modal Subtration-->
-      <div id="playground-sub" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal content-->
-          <div class="modal-content" style="background-image:url('./img/bg.png')">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text text-center">Subtraction</h4>
-            </div>
-            <div class="modal-body">
-              <p class="text text-primary text-info" >Subtraction gives us the <span class="text-success">difference</span> between two numbers.<br>
-                <span class="text-success">Difference </span> is the number of objects you will have on second group of objects from the first one.<br>
-              </p>
-              <div class="try-it text-center">
-                <input type="text" class="mega-input" id="sub-inp1"  maxlength="1" value="1"/>
-                <i class="glyphicon glyphicon-minus logo-glyph text-primary" style="margin-top:40px"></i>
-                <input type="text" class="mega-input" id="sub-inp2"  maxlength="1" value="1"/>
-                <div id="anim-sub" class="text text-big">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-			<div class="container">
-				<div class="col-xs-6">
-					<button id="add" class="btn btn-warning main-logo"><i class="glyphicon glyphicon-plus logo-glyph" onclick="lesson('add')"> </i>
-					<h3 class="text-default">Addition</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button id="sub" class="btn btn-primary main-logo" onclick="lesson('sub')"><i class="glyphicon glyphicon-minus logo-glyph"> </i>
-					<h3 class="text-default">Subtraction</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button id="mul" class="btn btn-success main-logo"><i class="glyphicon glyphicon-remove logo-glyph" > </i>
-					<h3 class="text-default">Multiplication</h3>
-					</button>
-				</div>
-				<div class="col-xs-6">
-					<button id="div" class="btn btn-danger main-logo"><i class="glyphicon glyphicon-resize-small logo-glyph" > </i>
-					<h3 class="text-default">Division</h3>
-					</button>
-				</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<div id="car_image"></div>
+			</div>
+			<div class="col-xs-6">
+				<div id="car_specs"></div>
 			</div>
 		</div>
-    </div>
+		<nav aria-label="Page navigation">
+		  <ul class="pagination" id="pag_nav">
+		  </ul>
+		</nav>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+		<div class="jumbotron text-center" style="margin-top:150px;">
+			<h1 class="text-center">Cars For You</h1>
+			<button id="cars" class="btn btn-success"><i class="glyphicon glyphicon-road logo-glyph" > </i>
+					<h3 class="text-default">Click here for cars</h3>
+			</button>
+		</div>
+	</div>
   </body>
 </html>

@@ -2,6 +2,10 @@
   background-color:#8bb8df;
 }
 
+.title{
+  font-size: 150px;
+}
+
 .login{
   width:50%;
   margin-top: 5%;
@@ -13,7 +17,8 @@
   width: 80%;
   margin:10%;
   transition-property: transform;
-  transition-duration: 5s;
+  transition-duration: 1s;
+  border-radius: 50px;
 }
 
 .main-logo:hover{
@@ -23,7 +28,7 @@ opacity: 1;
 -o-transform: rotate(360deg) ;
 transform:rotate(360deg);
 transition-property: transform;
-transition-duration: 5s;
+transition-duration: 1s;
 z-index: 1000;
 
 }
@@ -43,6 +48,26 @@ z-index: 1000;
 	position:absolute;
 	z-index:10000;
 	height:90%;
-	width:80%;
+	width:79%;
 	background-color:white;
+}
+
+.text-default{
+    font-family: 'Indie Flower', cursive;
+}
+
+.text{
+    font-family: 'Indie Flower', cursive;
+}
+
+.text-big{
+    font-size: 50px;
+}
+.modal-title{
+    font-size: 50px;
+}
+
+.mega-input{
+  font-size:100px;
+  width: 100px;
 }
