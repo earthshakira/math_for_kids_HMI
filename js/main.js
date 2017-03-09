@@ -1,17 +1,130 @@
 var page=1;
 var data=[{
-"Name":"yolo",
-"Fuel":"full",
+"Name":"Sport",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
 "img":"img/1.jpg"
 },{
-"Name":"golo",
-"fuel":"half",
+"Name":"City",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Family",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Roadster",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Heater",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Cooler",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Bomber",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Omni",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Family",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Roadster",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
+"img":"img/1.jpg"
+},{
+"Name":"Heater",
+"Capacity":"8 Seater",
+"Fuel Capacity":"60 liters",
+"Fuel type" :"Petrol",
+"Fuel System" : "Indirect Injection. Variable Intake",
+"Engine Alignment" : "Longitudinal",
+"Engine Position":" Front",
+"Number of valves" : "48 Valves",
+"Transmission Gearbox":"Manual",
 "img":"img/1.jpg"
 }];
 
 function renderpage(page){
 	var index=page-1;
-	$("#car_image").html("<img src=\""+data[index].img+"\"/>");
+	$("#car_image").html("<img class=\"img-responsive\" src=\""+data[index].img+"\"/>");
 	var htmlString="";
 	for(var key in data[index]) {
 		if(key=="img")continue;
