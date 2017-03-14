@@ -71,3 +71,9 @@ z-index: 1000;
   font-size:100px;
   width: 100px;
 }
+
+.vericaltext{
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace; /* this is just for good looks */
+}
